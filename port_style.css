@@ -363,19 +363,19 @@ section .title::after{
     background: #14c4db;
 }
 .skills-content .right .html::before{
-    width: 90%;
+    width: 80%;
 }
 .skills-content .right .css::before{
-    width: 60%;
-}
-.skills-content .right .js::before{
-    width: 50%;
-}
-.skills-content .right .php::before{
     width: 70%;
 }
+.skills-content .right .js::before{
+    width: 60%;
+}
+.skills-content .right .php::before{
+    width: 60%;
+}
 .skills-content .right .mysql::before{
-    width: 80%;
+    width: 60%;
 }
 
 /* teams section styling */
