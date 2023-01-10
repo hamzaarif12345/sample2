@@ -1,0 +1,687 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Tutorial 1 -  Pandas Basics\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "In this tutorial, you will learn about key libraries in python used in Machine learning and Data science and basic data maniputation that requires in almost all Data science related projects. \n",
+    "\n",
+    "### Popular Python Libraries\n",
+    "\n",
+    "$\\color{green}{1. NumPy}$\n",
+    "\n",
+    "Consist of multidimensional array, matrics and functions that works on them. It provides vectorization of mathematical operations on arrays and matrices which significantly improves the performance\n",
+    "\n",
+    "$\\color{green}{2. Pandas}$\n",
+    "\n",
+    "Provides smart data structures such as series and data frames for easy data manipulation and access\n",
+    "\n",
+    "$\\color{green}{3. SciKit- learn}$\n",
+    "\n",
+    "Consist of several machine learning algorithms. It is built over Numpy and Pandas\n",
+    "\n",
+    "$\\color{green}{4. Matplotlib}$\n",
+    "\n",
+    "Basic data visualization library. Using Matplotlib, line, scatter, bar, histograms and pie charts can be plotted\n",
+    "\n",
+    "$\\color{green}{5. Seaborn }$\n",
+    "\n",
+    "Seaborn is also used for  visualization but is superior to Matplotlib for style plots\n",
+    "\n",
+    "\n",
+    "\n",
+    "\n",
+    "\n",
+    "The first and the foremost requirement to solve problems with Machine learning and Data Science in python is by first loading the necessary libraries. Since this tutorial is only focussed on learning basic data manipulation so, only Pandas will be used and discussed. The next step is to load the data set in to Python enviornment. Once the data set is loaded, data manipulations as per the requirement can be performed.\n",
+    "\n",
+    "Let us start learning the fundamental steps to Machine learning based problem solving in Python\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Loading Pandas library"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "$\\color{red}{Code}$"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "scrolled": true
+   },
+   "outputs": [],
+   "source": [
+    "# It is conventional to refer 'Pandas' as 'pd'. Writing this means gives information that\n",
+    "#pd will be used throughout the code to refer Pandas. \n",
+    "import pandas as pd"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Loading data set"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "$\\color{red}{Code}$"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "scrolled": true
+   },
+   "outputs": [],
+   "source": [
+    "# It will load College data.csv file from local location to Pandas \n",
+    "#data frame called dataset. \n",
+    "dataset = pd.read_csv('College data.csv')# Note: different file formats can be used to load excel, text, hdf files\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Exploring  Data frames  in  Pandas\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 1. Print the whole dataframe\n",
+    "\n",
+    "$\\color{red}{Code}$"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "scrolled": true
+   },
+   "outputs": [],
+   "source": [
+    "# the most basic method to print the whole data frame to the screen. Just use the name\n",
+    "# of the data frame\n",
+    "dataset"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 2. Print a sample of dataframe\n",
+    "\n",
+    "$\\color{red}{Code}$"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "scrolled": true
+   },
+   "outputs": [],
+   "source": [
+    "# head() funtion prints n data samples from the start of the data frame on the screen. \n",
+    "# Where n is user defined parameter. To print data samples from the tail of the data frame,\n",
+    "# use tail() function.\n",
+    "print(dataset.head(5)) # prints top 5 records from data frame dataset\n",
+    "print(dataset.tail(5)) # prints last 5 records from data frame dataset"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 3. Print random data samples of dataframe\n",
+    "\n",
+    "$\\color{red}{Code}$"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "scrolled": true
+   },
+   "outputs": [],
+   "source": [
+    "# We can print random n data samples from the data frame. Where n is controlled by the \n",
+    "# user. It is a useful functiont to get an idea of how data samples looks in the data set\n",
+    "\n",
+    "print(dataset.sample(5)) # prints random 5 samples from the data frame"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 4. Print the size of the data set (number of rows and columns)\n",
+    "\n",
+    "$\\color{red}{Code}$"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "scrolled": true
+   },
+   "outputs": [],
+   "source": [
+    "# Size function prints the number of elemenys in data frame, ndim function gives number of dimensions\n",
+    "# shape gives data frame size in row and columns\n",
+    "print(\"The size of the dataframe: \", dataset.size)\n",
+    "print(\"The number of columns:\", dataset.ndim)\n",
+    "print(\"The shape of the data frame:\", dataset.shape)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 5. List column names from the data frame\n",
+    "\n",
+    "$\\color{red}{Code}$"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "scrolled": true
+   },
+   "outputs": [],
+   "source": [
+    "print(dataset.columns)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 6. List data type of each column/feature in  data frame\n",
+    "\n",
+    "$\\color{red}{Code}$"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "scrolled": true
+   },
+   "outputs": [],
+   "source": [
+    "# using dtypes function with dataframe prints data type of each feature\n",
+    "print(dataset.dtypes)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 7. Changing the column type with the astype method\n",
+    "\n",
+    "$\\color{red}{Code}$"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "dataset['Accept'] = dataset['Accept'].astype('float64')\n",
+    "print(dataset['Accept'].dtype)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## 2. Data selection operations in Pandas\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 1. Print records of specific columns\n",
+    "$\\color{red}{Code}$"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "scrolled": true
+   },
+   "outputs": [],
+   "source": [
+    "# To print only records of specific columns, following code can be used. It fetches details\n",
+    "# against features namely, Apps and Accept.\n",
+    "# There is a meaning to double [][]: The outer [] tells Pandas that we want to fetch\n",
+    "#columns. whereas, outer [], details name of features against which features \n",
+    "# are to be fetched\n",
+    "\n",
+    "print(dataset[['Apps', 'Accept']])"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 2. Extracting a subset of a pandas dataframe using loc function\n",
+    "\n",
+    "$\\color{red}{Code}$"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "scrolled": true
+   },
+   "outputs": [],
+   "source": [
+    "# loc function is used to get subset of data frame. Where user may specify rows and columns\n",
+    "# to be extracted from the dataframe. \n",
+    "\n",
+    "print(dataset.loc[0:4, 'Apps':'Accept']) #first five rows against two columns names Apps and Accept will be\n",
+    "# fetched\n",
+    "print(dataset.loc[0:4, :]) # first five rows against all columns will be fetched"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 3. Extracting a subset of a pandas dataframe using iloc function\n",
+    "$\\color{red}{Code}$"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "scrolled": true
+   },
+   "outputs": [],
+   "source": [
+    "# iloc function is also used to get subset of data frame. However, in this function, indexes\n",
+    "#are entered than row/column names\n",
+    "\n",
+    "print(dataset.iloc[0:4, 0:2]) # print 0-4 rows and 0,1 columns\n",
+    " "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 4. Filtering specific values in dataframe\n",
+    "\n",
+    "$\\color{red}{Code}$\n",
+    " "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "scrolled": true
+   },
+   "outputs": [],
+   "source": [
+    "# we can put condition on finding values from the data frame \n",
+    "\n",
+    "print(dataset[dataset['Accept'] >1000]) # print only data samples where Accept value >1000\n",
+    "\n",
+    "# we can combine two conditions\n",
+    "\n",
+    "print(dataset[dataset['Accept'] >1000] and dataset[dataset['Enroll'] >1000 ]) "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 5. Iterating in dataframe row by row\n",
+    "\n",
+    "$\\color{red}{Code}$"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Using itertuples() method will return an iterator yielding a named tuple for each row in\n",
+    "# the DataFrame. The first element of the tuple will be the row’s corresponding \n",
+    "# index value, while the remaining values are the row values\n",
+    "\n",
+    "for datavalues in dataset.itertuples():\n",
+    "    print(\"The data values row by row\", datavalues)\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 6. Iterating over specific column of Data frame\n",
+    "\n",
+    "$\\color{red}{Code}$"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "for value in dataset['Accept']:\n",
+    "    print(\"The value of feature Accept row by row: \", value)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## 3. Basic descriptive statistics using Data frame\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 1. Basic statistical functions in Pandas\n",
+    "$\\color{red}{Code}$"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "scrolled": true
+   },
+   "outputs": [],
+   "source": [
+    "# Pandas provide basic statistical functions such as, mean(), median(), mode(), min(), max,()\n",
+    "# describe() to find mean, median, mode, min, max value of a specific feature.\n",
+    "# the desribe() function gives mean, standard deviation, max, min, quantiles in one\n",
+    "# command. \n",
+    "\n",
+    "print(\"The mean of feature Accept\", dataset['Accept'].mean())\n",
+    "\n",
+    "print(\"The sum of feature Accept\", dataset['Accept'].sum())\n",
+    "print(\"The standard deviation of feature Accept\", dataset['Accept'].std())\n",
+    "print(\"The min value of feature Accept\", dataset['Accept'].min())\n",
+    "print(\"Statistical description of all features\", dataset.describe())"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 2. Printing description of columns based in data type\n",
+    "$\\color{red}{Code}$"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# following code will print statistics of features of type object. \n",
+    "dataset.describe(include=['object'])"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 3. Printing description of categorical columns using value_counts() method\n",
+    "$\\color{red}{Code}$"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# following code will print statistics of features of type object. \n",
+    "dataset['Private'].value_counts()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## 4. Data manipulation  using Data frame"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 1. Dataframe can be used to sort the value of one or more variable\n",
+    "$\\color{red}{Code}$"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# following code sort feature Apps\n",
+    "\n",
+    "dataset.sort_values(by='Apps', ascending=True).head()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# following code sorts feature Apps and Accept in ascending order\n",
+    "\n",
+    "dataset.sort_values(by=['Apps', 'Accept'], ascending=True).head()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 2. Manipulate columns of data frame using apply() function\n",
+    "$\\color{red}{Code}$"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# following code will add 15 to each column of the type 'int64' \n",
+    "newdataset = dataset.apply(lambda x: x + 15 if x.dtype == 'int64' else x)\n",
+    "print(newdataset)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 3. Manipulate columns of data frame using replace() function\n",
+    "$\\color{red}{Code}$"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# function is used to replace a string, regex, list, dictionary, series, number etc.\n",
+    "# from a dataframe\n",
+    "\n",
+    "# the following code will find \"yes\" in dataframe and replace it with \"TRUE\"\n",
+    "\n",
+    "dataset.replace(to_replace =\"Yes\", value =\"TRUE\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# the following code will replace all values less than 200 of feature Apps with 20\n",
+    "dataset.replace(to_replace = dataset[dataset['Apps'] < 200], value =20)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 4. Adding a new column to the existing dataframe in using insert() function\n",
+    "$\\color{red}{Code}$"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# the following code will ass column \"NewCol1\" to the existing data frame with default \n",
+    "# value as 78 at the location decided by the first argument. \n",
+    "dataset.insert(loc = len(dataset.columns), column =\"newCol\", value = 78)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 5. Drop a column from existing data frame\n",
+    "$\\color{red}{Code}$"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# the following code will delete column 'newCol' from the dataframe\n",
+    "dataset.drop(columns=['newCol'])"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### 6. Drop a specific row  from existing data frame\n",
+    "$\\color{red}{Code}$"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# following code will drop 0 and 1 row from the dataframe\n",
+    "\n",
+    "dataset.drop([0, 1])"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Exercise\n",
+    "\n",
+    "1. Download the iris data set from https://archive.ics.uci.edu/ml/datasets/Iris\n",
+    "\n",
+    "2. Load the data set into Pandas framework\n",
+    "\n",
+    "3. What is the size of the data set in number of data points and features ?\n",
+    "\n",
+    "4. What is the data tyoe of each feature?\n",
+    "\n",
+    "5. Print 10 random data points of the data set against features petal_length and petal_width\n",
+    "\n",
+    "6. Print data points from index 70 to 100 from data data set against features petal_length and petal_width.\n",
+    "\n",
+    "7. How many data points belong to class = setosa? \n",
+    "\n",
+    "8. Print all data points for petal_length and petal_width > 1.5 and class=setosa\n",
+    "\n",
+    "9. What is the mean of feature sepal_length with values > 1.2? \n",
+    "\n",
+    "10. What is the variance of feature petal_length?\n",
+    "\n",
+    "11. Print the distribution of feature class.\n",
+    "\n",
+    "12. Create a new column in the data set with the name ''petal_widthandlength\" at 4 position of the data frame. Set the values to the new column as addition of petal_width and petal_length columns. \n",
+    "\n",
+    "13. Replace value of feature petal_width where, petal_width > 1 with default value 5.\n",
+    "\n",
+    "14. Sort all features in the data frame in descending order.\n",
+    "\n",
+    "15. Delete all data points for class = Setosa"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.6.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
