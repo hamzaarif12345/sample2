@@ -1,0 +1,118 @@
+Page 1
+----------------------------------------------------------------------------------------------------1 
+ Scoring The Tuckman Team Maturity Questionnaire Electronically  
+Erin Barkema1 and John W. Moran2 
+October 2013  
+Description:  
+The Forming � Storming � Norming � Performing  model of group development was first 
+proposed by Bruce Tuckman in 1965, who maintained that these phases are all necessary and 
+inevitable in order for the team to grow, to face up to challenges, to tackle problems, to find 
+solutions, to plan work, and to deliver results .3 Today public h ealth departments are employing 
+the teaming concept on a regular basis to make quality improvements to their critical processes. 
+Team leaders and managers need to understand how teams mature and when to intervene when 
+things  are not progressing as desired.  
+When to Use:  
+The purpose of the Tuckman Model is to identify and  understand what stage of the teamwork 
+that a team is operating in.  It can be used at any point in the teaming process to build awareness 
+of how the team�s maturity and develop strategies to move it forward. The  team is administered a 
+questionnaire contain ing statements about teamwork .4 Each team member score s each of the 32 
+questions using the following scale to indicate how often their team displays each indicated 
+behavior:  
+ 
+ 
+ 
+ 
+ 
+                                                           
+1 Erin Barkema , MPH  is a consultant to the Public Health Foundation and a Regional Community Health 
+Consultant for the Bureau of Local Public Health Services at the Iowa Department of Public Health, and part -time 
+faculty in the Master of Public Health program at Des Moines U niversity.  
+2 John W. Moran , MBA, Ph.D., CMC, CQIA, CMQ/OE, is a Senior Quality Advisor to the Public Health 
+Foundation and a Senior Fellow at the University of Minnesota, School of Public Health in the Division of Health 
+Policy and Management. Vice -Preside nt of the Advisory Board of Choose To Be Healthy Coalition for York 
+County, Maine, 2011 � present, and a faculty member of the CDC/IHI Antibiotic Stewardship project 2011 -2012. 
+He is a member of the PHAB QI and Evaluation Committee and Adjunct Pr ofessor in the  Arizona State Unive rsity 
+School of Health Sciences . 
+3 http://en.wikipedia.org/wiki/Tuckman's_stages_of_group_development , accessed 5/19/2013  
+4 http://www.nwlink.com/~donclark/leader/teamsuv.html , accessed 10/1/2013  Response Scale  
+1 - Almost never  
+2 � Seldom  
+3 � Occasionally  
+4 � Frequently  
+5 - Almost always  Page 2
+----------------------------------------------------------------------------------------------------2 
+ Questionnaire:  
+1. ���  We try to have set procedures or protocols to ensure that things are orderly and run 
+smoothly (e.g. minimize interruptions; everyone gets the opportunity to have their 
+say).  
+2. ���  We are quick to get on with the task on hand and do not spend too much ti me in the 
+planning stage.  
+3. ���  Our team feels that we are all in it together and shares responsibilities for the team's 
+success or failure.  
+4. ���  We have thorough procedures for agreeing on our objectives and planning the way we 
+will perform our tasks.  
+5. ���  Team members are afraid or do not like to ask others for help.  
+6. ���  We take our team's goals and objectives literally, and assume a shared understanding.  
+7. ���  The team leader tries to keep order and contributes to the task at hand.  
+8. ���  We do not have fixed procedures, we make them up as the task or project progresses.  
+9. ���  We generate lots of ideas, but we do not use many because we fail to listen to them and 
+reject them without fully understanding them.  
+10. ���  Team members do not fully trust the other team members and closely monitor others 
+who are working on a specific task.  
+11. ���  The team leader ensures that we follow the procedures, do not argue, do not interrupt, 
+and keep to the point.  
+12. ���  We enjoy working together;  we have a fun and productive time.  
+13. ���  We have accepted each other as members of the team.  
+14. ���  The team leader is democratic and collaborative.  
+15. ���  We are trying to define the goal and what tasks need to be accomplished.  
+16. ���  Many of the team members have their own ideas about the process and personal 
+agendas are rampant.  
+17. ���  We fully accept each other's strengths and weakness es. 
+18. ���  We assign specific roles to team members (team leader, facilitator, time keeper, note  
+taker, etc.).  
+19. ���  We try to achieve harmony by avoiding conflict.  
+20. ���  The tasks are very different from what we imagined and seem very difficult to 
+accomplish.  
+21. ���  There are many abstract discussions of the concepts and issues, which make some 
+members impatient with these discussions.  
+22. ���  We are able to work through group problems.  
+23. ���  We argue a lot even though we agree on the real issues.  
+24. ���  The team is often tempted to go above the original scope of the project.  
+25. ���  We express criticism of others constructively.  
+26. ���  There is a close attachment to the team.  
+27. ���  It seems as if little is being accomplished with the project's goals.  
+28. ���  The goals we have established seem unrealistic.  
+29. ���  Although we are not fully sure of the project's goals and issues, we are excited and 
+proud to be on the team.  
+30. ���  We often share personal problems with each other.  
+31. ���  There is a lot of resisting of the tasks on hand and quality improvement approaches.  
+32. ���  We get a lot of work done.  
+ Page 3
+----------------------------------------------------------------------------------------------------3 
+ Scoring:  
+Once the questionnaire is scored by each team member the next step is to transfer all the score s 
+that were given for an  item on the questionnaire  to the score sheet below . When you have entered 
+all the scores for each question, total each of the four columns.  
+Forming  
+Stage  Item Score   Storming  
+Stage Item Score  Norming  
+Stage Item Score  Performing  
+Stage Item Score  
+ 1. _______   2. _______   4. _______   3. _______  
+ 5. _______   7. _______   6. _______    8. _______  
+10. _______   9. _______  11. _______  12. _______  
+15. _______  16. _______  13. _______  14. _______  
+18. _______  20. _______  19. _______  17. _______  
+21. _______  23. _______  24. _______  22. _______  
+27. _______  28. _______  25. _______  26. _______  
+29. _______  31. _______  30. _______  32. _______  
+TOTAL ____    TOTAL _____  TOTAL _____  TOTAL _____  
+ 
+Scoring it Electronically:  Scoring these questions manually is a tedious process and can result 
+in data entry errors. To help simplify the process an electronic scoring tool has been developed 
+and is explained in the next section.  The electronic tool separates  the 32 questions into their 
+Tuckman team maturity categories and each respondent�s (R) score i s entered for each question.  
+The questionnaire is designed to help you assess what stage your team normally operates. The 
+lowest score possible for a ny individual in any  stage is 8 (Almost never) while the highest score 
+possible for a stage is 40 (Almost always).  Page 4
+----------------------------------------------------------------------------------------------------

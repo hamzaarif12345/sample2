@@ -1,0 +1,51 @@
+def Finish(NOP,Arr_T,Burst_T,F_T,TAT,WT,PN):
+ a=0
+ F_T[0]=Arr_T[0]+Burst_T[0]
+ TAT[0]=F_T[0]-Arr_T[0]
+ WT[0]=TAT[0]-Burst_T[0]
+ for i in range(1,NOP):
+    X=F_T[i-1]
+    m=Burst_T[i]
+    for j in range(i,NOP):
+      if(X>=Arr_T[j] and m>=Burst_T[j]):
+        m=Burst_T[j]
+        a=j
+        F_T[a]=X+Burst_T[a]
+        TAT[a]=F_T[a]-Arr_T[a]
+        WT[a]=TAT[a]-Burst_T[a]
+        PN[a],PN[i]=PN[i],PN[a]
+        Arr_T[a],Arr_T[i]=Arr_T[i],Arr_T[a]
+        Burst_T[a],Burst_T[i]=Burst_T[i],Burst_T[a]
+        F_T[a],F_T[i]=F_T[i],F_T[a]
+        TAT[a],TAT[i]=TAT[i],TAT[a]
+        WT[a],WT[i]=WT[i],WT[a]
+ 
+ 
+ 
+NOP=int(input("Enter the no. of process : "))
+Arr_T=[0]*NOP
+Burst_T=[0]*NOP
+for i in range(NOP):
+ print("Enter the arrival time of",(i+1),"process : ")
+ Arr_T[i]=int(input())
+ print("Enter the CPU burst time of",(i+1),"process : ")
+ Burst_T[i]=int(input())
+F_T=[0]*NOP
+TAT=[0]*NOP
+WT=[0]*NOP
+PN=[int(i) for i in range(1,NOP+1)]
+print("\n ********DATA ENTERED********* \n")
+print("\n PROCESS \t ARRIVAL \t BURST")
+for i in range(0,NOP):
+ print(PN[i],"\t\t",Arr_T[i],"\t\t",Burst_T[i])
+print("\n Applying SJF...............................")
+Finish(NOP,Arr_T,Burst_T,F_T,TAT,WT,PN)
+print("PROCESS \t ARRIVAL \t BURST \t FINISH \t TURN_AROUND \t WAITING")
+w=0
+ta=0
+for i in range(0,NOP):
+ print(PN[i],"\t\t",Arr_T[i],"\t\t",Burst_T[i],"\t\t",F_T[i],"\t\t",TAT[i],"\t\t",WT[i])
+ w+=WT[i]
+ ta+=TAT[i]
+print("Average turn around time : ",(w/NOP))
+print("Average waiting around time : ",(ta/NOP))
