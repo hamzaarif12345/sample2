@@ -1,17 +1,29 @@
 .grid {
-	width: 606px;
-	height: 606px;
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.square {
-	height: 200px;
-	width: 200px;
-	border: solid black 1px;
-}
-
-.mole {
-	background-image: url("mole.jpg");
-	background-size: cover;
-}
+    position: absolute;
+    width: 560px;
+    height: 300px;
+    border: solid 1px black;
+    margin-top: 100px;
+  }
+  
+  .user {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    background-color: blueviolet;
+  }
+  
+  .block {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    background-color: blue;
+  }
+  
+  .ball {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: red;
+  }
