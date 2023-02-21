@@ -25,22 +25,24 @@
 .hell .hh a{
     text-decoration: none;
     width: calc(33% - 30px);
-    background: #0c9676;
-    text-align: center;
-    border-radius: 6px;
-    padding: 30px 160px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-size: 20px;
-}
-.hell1 .hh1 a{
-    text-decoration: none;
-    width: calc(33% - 30px);
-    background: #0c9676;
+    background: #82ddde;
     text-align: center;
     border-radius: 6px;
     padding: 30px 190px;
     cursor: pointer;
     transition: all 0.3s ease;
     font-size: 20px;
+    justify-content: space-between;
+}
+.hell1 .hh1 a{
+    text-decoration: none;
+    width: calc(33% - 30px);
+    background: #82ddde;
+    text-align: center;
+    border-radius: 6px;
+    padding: 30px 190px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 20px;
+    justify-content: space-between;
 }
