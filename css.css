@@ -1,0 +1,46 @@
+
+.hell .hh {
+    margin-top: 30px;
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+}
+.hell1 .hh1 {
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+}
+.hell{
+    margin-top: 100px;
+    font-size: 25px;
+    
+}
+.hell1{
+    margin-top: 100px;
+    font-size: 25px;
+    margin-bottom: 100px;
+}
+.hell .hh a{
+    text-decoration: none;
+    width: calc(33% - 30px);
+    background: #0c9676;
+    text-align: center;
+    border-radius: 6px;
+    padding: 30px 160px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 20px;
+}
+.hell1 .hh1 a{
+    text-decoration: none;
+    width: calc(33% - 30px);
+    background: #0c9676;
+    text-align: center;
+    border-radius: 6px;
+    padding: 30px 190px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 20px;
+}
