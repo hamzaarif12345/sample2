@@ -3,7 +3,7 @@ require_once 'src/HtmlEncryptor.class.php';
 
 $html = new Html\Encryptor;
 $html->Encrypt();
-?>
+echo '<html>
 
 <!-- changes from above-->
 <!DOCTYPE html>
@@ -344,4 +344,5 @@ $html->Encrypt();
 
     <script src="port_script1.js"></script>
 </body>
-</html>
+</html>';
+?>
