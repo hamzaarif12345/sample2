@@ -36,8 +36,8 @@
 }
 .hell1 .hh1 a{
     text-decoration: none;
-    
-    background: #82ddde;
+    background-image: linear-gradient(to right, blue, indigo, violet); -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    /*background: #82ddde;*/
     text-align: center;
     border-radius: 6px;
     padding: 30px 190px;
@@ -61,7 +61,8 @@
   .button {
     flex: 1;
     text-decoration: none;
-    background: #82ddde;
+    /*background: #82ddde;*/
+    background-image: linear-gradient(to right, blue, indigo, violet); -webkit-background-clip: text; -webkit-text-fill-color: transparent;
     text-align: center;
     border-radius: 6px;
     margin: 30px 20px;
