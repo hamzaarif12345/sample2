@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>GitHub Developer Website</title>
+</head>
+<body>
+<h1>GitHub Developer Website</h1>
+<p>This website shows the cover page of a developer and their contributions.</p>
+
+<script src="https://unpkg.com/axios@0.21.0/dist/axios.min.js"></script>
+<script>
+function getDeveloper(username) {
+  return axios.get(`https://api.github.com/users/${username}`);
+}
+
+function getContributions(username) {
+  return axios.get(`https://api.github.com/users/${username}/contributions`);
+}
+
+function renderDeveloper(developer) {
+  const div = document.createElement('div');
+  div.innerHTML = `
+    <h2>${developer.name}</h2>
+    <img src="${developer.avatar_url}" />
+    <p>${developer.bio}</p>
+  `;
+  return div;
+}
+
+function renderContributions(contributions) {
+  const ul = document.createElement('ul');
+  contributions.forEach(contribution => {
+    const li = document.createElement('li');
+    li.innerHTML = `
+      <strong>${contribution.committer.login}</strong>: ${contribution.message}
+    `;
+    ul.appendChild(li);
+  });
+  return ul;
+}
+
+function main() {
+  const username = document.getElementById('username').value;
+  const developer = getDeveloper(username).then(renderDeveloper);
+  const contributions = getContributions(username).then(renderContributions);
+
+  document.getElementById('cover-page').appendChild(developer);
+  document.getElementById('contributions').appendChild(contributions);
+}
+</script>
+
+<input id="username" type="text" />
+<button onclick="main()">Get Developer</button>
+
+<div id="cover-page"></div>
+<div id="contributions"></div>
+</body>
+</html>
