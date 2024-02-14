@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>CRUD Web App</title>
+</head>
+<body>
+    <div class="container">
+        <h1>User Management</h1>
+        <form id="userForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+
+            <input type="hidden" id="userId">
+
+            <button type="button" onclick="saveUser()">Save User</button>
+        </form>
+
+        <div id="userList"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
