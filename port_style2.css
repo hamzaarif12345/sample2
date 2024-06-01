@@ -736,6 +736,24 @@ footer span a:hover{
     font-size: 20px;
 }
 
+
+.experience .title::after{
+    content: "My Experience";
+}
+.experience .cer{
+    margin-top: 20px;
+}
+.experience .cer h1 {
+    margin-top: 20px;
+    color:#14c4db;
+    font-size: 25px;
+}
+.experience .cer p {
+    margin-top: 10px;
+    
+    font-size: 20px;
+}
+
 .contact .icons  a1 {
     display: inline-block;
     background: #14a0db;
