@@ -704,7 +704,7 @@ footer span a:hover{
 .certificates .cer p {
     margin-top: 10px;
     
-    font-size: 20px;
+    font-size: 18px;
 }
 .skills .skill1{
     margin-top: 20px;
@@ -717,7 +717,7 @@ footer span a:hover{
 .skills .skill1 p {
     margin-top: 10px;
     
-    font-size: 20px;
+    font-size: 18px;
 }
 .projects .title::after{
     content: "My Projects";
@@ -733,7 +733,7 @@ footer span a:hover{
 .projects .cer p {
     margin-top: 10px;
     
-    font-size: 20px;
+    font-size: 18px;
 }
 
 
@@ -751,7 +751,7 @@ footer span a:hover{
 .experience .cer p {
     margin-top: 10px;
     
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .contact .icons  a1 {
