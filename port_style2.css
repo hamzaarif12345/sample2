@@ -326,7 +326,7 @@ section .title::after{
     width: calc(50% - 30px);
 }
 .skills .skills-content .left .text{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     margin-bottom: 10px;
 }
@@ -338,7 +338,7 @@ section .title::after{
     background: #14aadb;
     color: #fff;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 300;
     padding: 8px 16px;
     margin-top: 20px;
     border-radius: 6px;
@@ -360,7 +360,7 @@ section .title::after{
 }
 .skills .skills-content .right span{
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
 }
 .skills .skills-content .right .line{
     height: 5px;
@@ -717,7 +717,7 @@ footer span a:hover{
 .skills .skill1 p {
     margin-top: 10px;
     
-    font-size: 18px;
+    font-size: 16px;
 }
 .projects .title::after{
     content: "My Projects";
