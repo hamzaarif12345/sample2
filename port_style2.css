@@ -174,7 +174,7 @@ section .title::after{
     font-family: 'Ubuntu', sans-serif;
     /*display:inline-block;
     background-image: linear-gradient(to right,blue, limegreen);
-    background-clip: text;
+    background-clip: text ;
     color: transparent;*/
 }
 .home .max-width{
