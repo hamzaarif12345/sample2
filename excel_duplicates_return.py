@@ -66,7 +66,7 @@ def main():
                     "index": idx+1,
                     "number": num,
                     "tin": tin,
-                    "reason": "duplicate_pair - same number & same tin as earlier"
+                    "reason": "duplicate_pair - same number & same mail as earlier"
                 })
             else:
                 # same number but different tin: we keep the earlier tin
@@ -74,7 +74,7 @@ def main():
                     "index": idx+1,
                     "number": num,
                     "tin": tin,
-                    "reason": f"duplicate_number - earlier tin kept: '{first_tin}'"
+                    "reason": f"duplicate_number - earlier mail kept: '{first_tin}'"
                 })
 
     # Write deduped.csv

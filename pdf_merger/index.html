@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Secure PDF Merger (No Upload)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- pdf-lib (loaded locally in browser memory) -->
+  <script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      padding: 20px;
+    }
+    .container {
+      max-width: 500px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    button {
+      margin-top: 10px;
+      padding: 10px;
+      width: 100%;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>🔒 Secure PDF Merger</h2>
+  <p>Files are merged locally. Nothing is uploaded.</p>
+
+  <input type="file" id="pdfFiles" accept="application/pdf" multiple />
+  <button onclick="mergePDFs()">Merge PDFs</button>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
