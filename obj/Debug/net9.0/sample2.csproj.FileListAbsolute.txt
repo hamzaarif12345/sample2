@@ -1,0 +1,5 @@
+D:\__Downloads\VS CODE\sample2\obj\Debug\net9.0\sample2.GeneratedMSBuildEditorConfig.editorconfig
+D:\__Downloads\VS CODE\sample2\obj\Debug\net9.0\sample2.AssemblyInfoInputs.cache
+D:\__Downloads\VS CODE\sample2\obj\Debug\net9.0\sample2.AssemblyInfo.cs
+D:\__Downloads\VS CODE\sample2\obj\Debug\net9.0\sample2.csproj.CoreCompileInputs.cache
+D:\__Downloads\VS CODE\sample2\obj\Debug\net9.0\sample2.sourcelink.json

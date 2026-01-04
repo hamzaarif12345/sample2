@@ -1,4 +1,4 @@
-public first_array()
+﻿public first_array()
 {
     int [] arr = {1, 2, 3, 4, 5};
     foreach (var item in arr){
@@ -44,3 +44,12 @@ public jagged_array()
             Console.WriteLine();
 		}
 }
+
+
+public static void Main (string[] args)
+{
+    first_array();
+    second_array();
+    Multidimensional_array();
+    jagged_array();
+}using System;
