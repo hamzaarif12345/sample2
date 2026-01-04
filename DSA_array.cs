@@ -79,7 +79,8 @@ public list_in_Chsarp(){
 
     int [] arr ={1,2,3,4,5};
     List<int> list4 = new List<int>(arr); // Method 4: Initializing from an existing array
-
+    //size of list4 
+    console.writeline("size of list4: " + list4.count);
     List<int> list5 = new List<int>(10);
     list5 = {1,2,3,4,5}; // Method 5: Specifying initial capacity
     list5.foreach(a =>console.writeline(a));
@@ -101,6 +102,8 @@ public list_in_Chsarp(){
     list5.add(17);
     console.writeline("after adding more elements");
     list5.foreach(a =>console.writeline(a));
+    
+    bool exists = list.Contains(3);
 
     list5.clear();
     console.writeline("after clearing the list");
