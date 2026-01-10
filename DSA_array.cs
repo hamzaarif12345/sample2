@@ -126,3 +126,43 @@ public list_in_Chsarp(){
 
     
 }
+
+public stack (){
+    {
+        // Creating a Stack of strings
+        Stack<string> myStack1 = new Stack<string>();
+        // Inserting the elements into the Stack
+        myStack1.Push("GeeksforGeeks");
+        myStack1.Push("is");
+        myStack1.Push("the");
+        myStack1.Push("best");
+        myStack1.Push("website");
+
+        // Displaying the count of elements
+        // contained in the myStack1
+        Console.Write("Total number of elements in the Stack 1 are : ");
+
+        Console.WriteLine(myStack1.Count);
+
+        // Displaying the elements in Stack myStack1
+        foreach(string str in myStack1)
+        {
+            Console.WriteLine(str);
+        }
+
+        // Creating a Stack from a collection
+        Stack<string> myStack2 = new Stack<string>(myStack1.ToArray());
+
+        // Displaying the count of elements
+        // contained in the myStack2
+        Console.Write("Total number of elements in the Stack 2 are : ");
+
+        Console.WriteLine(myStack2.Count);
+
+        // Displaying the elements in Stack myStack2
+        foreach(string str in myStack2)
+        {
+            Console.WriteLine(str);
+        }
+    }
+}
