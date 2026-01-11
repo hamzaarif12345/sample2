@@ -166,3 +166,102 @@ public stack (){
         }
     }
 }
+
+
+public sorted_list(){
+            // -------------------------------
+            // 1. Creating a SortedList
+            // -------------------------------
+
+            // Key = int, Value = string
+            SortedList<int, string> students = new SortedList<int, string>();
+
+
+            // -------------------------------
+            // 2. Adding Elements
+            // -------------------------------
+            // Keys are automatically sorted (Ascending)
+
+            students.Add(103, "Rahul");
+            students.Add(101, "Ankit");
+            students.Add(105, "Suman");
+            students.Add(102, "Neha");
+
+            // ❌ Duplicate keys NOT allowed
+            // students.Add(101, "Duplicate"); // Runtime Error
+
+
+            // -------------------------------
+            // 3. Display SortedList
+            // -------------------------------
+            Console.WriteLine("SortedList Elements:");
+            foreach (var item in students)
+            {
+                Console.WriteLine($"Key: {item.Key}, Value: {item.Value}");
+            }
+
+            // Output will be sorted by KEY:
+            // 101, 102, 103, 105
+
+
+            // -------------------------------
+            // 4. Accessing Elements
+            // -------------------------------
+
+            // Access by KEY
+            Console.WriteLine("\nValue for key 102: " + students[102]);
+
+            // Access by INDEX
+            Console.WriteLine("First element value: " + students.Values[0]);
+            Console.WriteLine("First element key: " + students.Keys[0]);
+
+
+            // -------------------------------
+            // 5. Updating Value
+            // -------------------------------
+
+            students[103] = "Rahul Sharma"; // Updates value
+
+            Console.WriteLine("\nUpdated value for key 103: " + students[103]);
+
+
+            // -------------------------------
+            // 6. Checking Existence
+            // -------------------------------
+
+            Console.WriteLine("\nContains Key 105: " + students.ContainsKey(105));
+            Console.WriteLine("Contains Value 'Neha': " + students.ContainsValue("Neha"));
+
+
+            // -------------------------------
+            // 7. Removing Elements
+            // -------------------------------
+
+            // Remove by Key
+            students.Remove(101);
+
+            // Remove by Index
+            students.RemoveAt(0);
+
+            Console.WriteLine("\nAfter Removal:");
+            foreach (var item in students)
+            {
+                Console.WriteLine($"Key: {item.Key}, Value: {item.Value}");
+            }
+
+
+            // -------------------------------
+            // 8. Count
+            // -------------------------------
+            Console.WriteLine("\nTotal Elements: " + students.Count);
+
+
+            // -------------------------------
+            // 9. Clear All Elements
+            // -------------------------------
+            students.Clear();
+            Console.WriteLine("SortedList cleared. Count = " + students.Count);
+
+
+            Console.ReadLine();
+        }
