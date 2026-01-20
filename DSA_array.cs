@@ -5,6 +5,7 @@ public first_array()
         console .WriteLine(item);
         
     }
+    arr.sort();
 }
 public second_array()
 {
