@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@angular/cli": "^7.2.4",
+    "typescript": "^5.9.3"
+  }
+}
