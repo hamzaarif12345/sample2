@@ -1,73 +1,114 @@
-$(document).ready(function(){
-    $(window).scroll(function(){
-        // sticky navbar on scroll script
-        if(this.scrollY > 20){
-            $('.navbar').addClass("sticky");
-        }else{
-            $('.navbar').removeClass("sticky");
-        }
-        
-        // scroll-up button show/hide script 
-        if(this.scrollY > 500){
-            $('.scroll-up-btn').addClass("show");
-        }else{
-            $('.scroll-up-btn').removeClass("show");
-        }
-    });
+﻿const navbar = document.querySelector('.navbar');
+const scrollBtn = document.querySelector('.scroll-up-btn');
+const menuToggle = document.querySelector('.menu-toggle');
+const menu = document.querySelector('.menu');
+const menuLinks = document.querySelectorAll('.menu a');
+const typingTarget = document.querySelector('.typing');
 
-    // slide-up script
-    $('.scroll-up-btn').click(function(){
-        $('html').animate({scrollTop: 0});
-        // removing smooth scroll on slide-up button click
-        $('html').css("scrollBehavior", "auto");
-    });
+function handleScrollUI() {
+    if (window.scrollY > 16) {
+        navbar.classList.add('sticky');
+    } else {
+        navbar.classList.remove('sticky');
+    }
 
-    $('.navbar .menu li a').click(function(){
-        // applying again smooth scroll on menu items click
-        $('html').css("scrollBehavior", "smooth");
-    });
+    if (window.scrollY > 420) {
+        scrollBtn.classList.add('show');
+    } else {
+        scrollBtn.classList.remove('show');
+    }
+}
 
-    // toggle menu/navbar script
-    $('.menu-btn').click(function(){
-        $('.navbar .menu').toggleClass("active");
-        $('.menu-btn i').toggleClass("active");
-    });
+window.addEventListener('scroll', handleScrollUI);
+handleScrollUI();
 
-    // typing text animation script
-    var typed = new Typed(".typing", {
-        strings: ["Programmer", "Web Developer", "Software Developer", "AI ML Enthusiast","Data Analyst"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
-    });
+scrollBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
 
-    var typed = new Typed(".typing-2", {
-        strings: ["Programmer", "Web Developer", "Software Developer", "AI ML Enthusiast","Data Analyst"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
+if (menuToggle) {
+    menuToggle.addEventListener('click', () => {
+        const isOpen = menu.classList.toggle('open');
+        menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
     });
+}
 
-    // owl carousel script
-    $('.carousel').owlCarousel({
-        margin: 20,
-        loop: true,
-        autoplay: true,
-        autoplayTimeOut: 2000,
-        autoplayHoverPause: true,
-        responsive: {
-            0:{
-                items: 1,
-                nav: false
-            },
-            600:{
-                items: 2,
-                nav: false
-            },
-            1000:{
-                items: 3,
-                nav: false
-            }
-        }
+menuLinks.forEach((link) => {
+    link.addEventListener('click', () => {
+        menu.classList.remove('open');
+        menuToggle.setAttribute('aria-expanded', 'false');
     });
 });
+
+const sections = [...document.querySelectorAll('section[id]')];
+const sectionObserver = new IntersectionObserver(
+    (entries) => {
+        entries.forEach((entry) => {
+            if (!entry.isIntersecting) {
+                return;
+            }
+
+            const id = entry.target.getAttribute('id');
+            menuLinks.forEach((link) => {
+                const isMatch = link.getAttribute('href') === `#${id}`;
+                link.classList.toggle('active', isMatch);
+            });
+        });
+    },
+    { threshold: 0.45 }
+);
+
+sections.forEach((section) => sectionObserver.observe(section));
+
+const revealNodes = document.querySelectorAll('.reveal');
+const revealObserver = new IntersectionObserver(
+    (entries, observer) => {
+        entries.forEach((entry) => {
+            if (!entry.isIntersecting) {
+                return;
+            }
+
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+        });
+    },
+    { threshold: 0.12 }
+);
+
+revealNodes.forEach((node) => revealObserver.observe(node));
+
+const roles = ['Programmer', 'Software Developer', 'Web Developer', 'AI/ML Enthusiast', 'Data Analyst'];
+let roleIndex = 0;
+let letterIndex = 0;
+let isDeleting = false;
+
+function typeRole() {
+    if (!typingTarget) {
+        return;
+    }
+
+    const currentRole = roles[roleIndex];
+
+    if (isDeleting) {
+        letterIndex -= 1;
+    } else {
+        letterIndex += 1;
+    }
+
+    typingTarget.textContent = currentRole.slice(0, letterIndex);
+
+    let delay = isDeleting ? 55 : 95;
+
+    if (!isDeleting && letterIndex === currentRole.length) {
+        delay = 1400;
+        isDeleting = true;
+    } else if (isDeleting && letterIndex === 0) {
+        isDeleting = false;
+        roleIndex = (roleIndex + 1) % roles.length;
+        delay = 360;
+    }
+
+    setTimeout(typeRole, delay);
+}
+
+typeRole();

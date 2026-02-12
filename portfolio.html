@@ -1,328 +1,248 @@
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hamza Arif amity university portfolio.">
-    <title>Hamza Arif</title>
+    <meta name="description" content="Portfolio of Hamza Arif, Software Engineer.">
+    <title>Hamza Arif | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="port_style2.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="https://kit.fontawesome.com/ebaab4f3ed.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
-
 </head>
 <body>
-    <div class="scroll-up-btn">
+    <button class="scroll-up-btn" aria-label="Scroll to top">
         <i class="fas fa-angle-up"></i>
-    </div>
-    <nav class="navbar">
-        <div class="max-width">
-            <div class="logo"><a href="#">My Portfo<span>lio</span></a></div>
-            <ul class="menu">
-                <li><a href="#home" class="menu-btn" style="background-image: linear-gradient(to right, blue, red); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Home</a></li>
-                <li><a href="#about" class="menu-btn" style="background-image: linear-gradient(to right, blue,red ); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">About</a></li>
-                <li><a href="#services" class="menu-btn" style="background-image: linear-gradient(to right, blue, red); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Services</a></li>
-                <li><a href="#skills" class="menu-btn" style="background-image: linear-gradient(to right, blue,red); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Skills</a></li>
-                <li><a href="#certificates" class="menu-btn" style="background-image: linear-gradient(to right, blue, red); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Certificates</a></li>
-                <li><a href="#projects" class="menu-btn" style="background-image: linear-gradient(to right, blue,red ); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Projects</a></li>
-                <li><a href="#experience" class="menu-btn" style="background-image: linear-gradient(to right, blue,red ); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Experience</a></li>
-                
-                
-                <!--<li><a href="#teams" class="menu-btn"> Teams</a></li>-->
-                <li><a href="#contact" class="menu-btn" style="background-image: linear-gradient(to right, blue,red); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Contact</a></li>
-            </ul>
-            <div class="menu-btn">
+    </button>
+
+    <header class="navbar" id="top">
+        <div class="container nav-inner">
+            <a class="logo" href="#home">Hamza<span>Arif</span></a>
+            <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
                 <i class="fas fa-bars"></i>
-                
-            </div>
+            </button>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-    </nav>
+    </header>
 
-    <!-- home starts section start -->
-    <section class="home" id="home">
-        <div class="max-width">
-            <div class="home-content">
-                <div class="text-1">Hello, my name is</div>
-                <div class="text-2" style="background-image: linear-gradient(to right, yellow, green); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Hamza Arif</div>
-                <div class="text-3">And I'm a <span class="typing"></span></div>
-                <a href="#about">About Me</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- about section start -->
-    <section class="about" id="about">
-        <div class="max-width">
-            <h2 class="title">About me</h2>
-            <div class="about-content">
-                <div class="column left">
-                    <img src="i7.jpeg" alt="">
-                </div>
-                <div class="column right">
-                    <div class="text">I'm Hamza and I'm  <span class="typing-2"></span></div>
-                    <!--<p style="background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">This is my multicolored text!</p>-->
-
-                    <p style="    background-image: linear-gradient(to right, blue, indigo, violet); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
-                        • Currently working as Associate Software Engineer at NCS India.<br>
-                        • TechStack: .NET Framework, C#, Entity Framework, MVC, TFS, SSMS.<br>
-                        • Previouly: Java, Selenium, Postman, Cucumber and RestAssured.<br>
-                        • Worked on Angular, Typescript and Java 8 at IBM.<br>
-                        • Internship: Django, MongoDB, HTML5 and CSS3 atTech Mahindra.<br>
-                        • Interested: AI, ML, Full Stack and DSA.<br>
-                        • Interested in startup and business as well.
-                        <!-- <b>💻 Currently working as Associate Software Engineer at NCS India.</b> <br> -->
-                    </p>
-                    <a href="#services">My Services</a>
-                </div>
+    <section class="hero section" id="home">
+        <div class="hero-bg"></div>
+        <div class="container hero-content reveal">
+            <p class="eyebrow">Software Engineer</p>
+            <h1>Building clean, scalable software and modern web experiences.</h1>
+            <p class="hero-sub">Hi, I am Hamza Arif. I work across .NET, Angular, and data-driven systems with a strong interest in AI/ML and product-focused engineering.</p>
+            <p class="hero-typing">I am a <span class="typing" aria-live="polite"></span></p>
+            <div class="hero-cta">
+                <a class="btn btn-primary" href="#projects">View Projects</a>
+                <a class="btn btn-ghost" href="#contact">Contact Me</a>
             </div>
         </div>
     </section>
 
-    <!-- services section start -->
-    <section class="services" id="services">
-        <div class="max-width">
-            <h2 class="title">My Services</h2>
-            <div class="serv-content">
-                <div class="card">
-                    <div class="box">
-                        <i class="fas fa-paint-brush"></i>
-                        <div class="text" style="background-image: linear-gradient(to right, blue , green, violet); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Web Design</div>
-                        <p style="background-image: linear-gradient(to right,  yellow, orange, red); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Angular, HTML, CSS </p>
-                    </div>
+    <section class="section" id="about">
+        <div class="container reveal">
+            <h2 class="title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-image-wrap">
+                    <img src="i7.jpeg" alt="Portrait of Hamza Arif" class="about-image">
                 </div>
-                <div class="card">
-                    <div class="box">
-                        <i class="fas fa-code"></i>
-                        <div class="text" style="background-image: linear-gradient(to right, blue , green, violet); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Software Developing</div>
-                        <p style="background-image: linear-gradient(to right,  yellow, orange, red); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">C, C++, C#, Python, Java, JavaScript, TypeScript </p>
-                    </div>
+                <div class="about-content card">
+                    <p class="about-intro">I am a software engineer focused on backend reliability, frontend quality, and practical problem solving.</p>
+                    <ul class="clean-list">
+                        <li>Currently working as Associate Software Engineer at NCS India.</li>
+                        <li>Tech stack: .NET Framework, C#, Entity Framework, MVC, TFS, SSMS.</li>
+                        <li>Previously worked with Java, Selenium, Postman, Cucumber, and RestAssured.</li>
+                        <li>Worked on Angular, TypeScript, and Java 8 at IBM.</li>
+                        <li>Internship experience with Django, MongoDB, HTML5, and CSS3 at Tech Mahindra.</li>
+                        <li>Interested in AI, ML, full stack development, DSA, startups, and business.</li>
+                    </ul>
+                    <a class="btn btn-primary" href="#services">My Services</a>
                 </div>
-                <div class="card">
-                    <div class="box">
-                        <i class="fa-brands fa-figma"></i>
-                        <div class="text" style="background-image: linear-gradient(to right, blue , green, violet); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">UI/UX</div>
-                        <p style="background-image: linear-gradient(to right,  yellow, orange, red); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Designing UI/UX using Figma and Canva</p>
-                    </div>
-                </div>
-               </div>
             </div>
         </div>
     </section>
 
-    <!-- skills section start -->
-    <section class="skills" id="skills">
-        <div class="max-width">
-            <h2 class="title">My skills</h2>
-            <div class="skills-content">
-                <!--<div class="column left">
-                    <div class="text">My creative skills & experiences.</div>
-                    <p>These are some furthur than above</p>
-                    <a href="#teams">My Team</a>
-                </div>-->
-                <div class="skill1">
-                    <h1>Programming Languages</h1>
-                    <p style="background-image: linear-gradient(to right, blue, indigo, violet); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">C, C++, C#, Java, Python, SQL, HTML 5, CSS 3, JavaScript</p>
-                    <h1>Frameworks</h1>
-                    <p style="background-image: linear-gradient(to right, blue, indigo, violet); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">.NET Framework, .NET MVC, Angular, Entity Framework, Selenium</p>
-                    
-                    <h1>Tools</h1>
-                    <p style="background-image: linear-gradient(to right, blue, indigo, violet); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Azure Devops Server, Visual Studio, SQL Server, MySQL, Git, Postman</p>
-                </div>
-                
+    <section class="section section-alt" id="services">
+        <div class="container reveal">
+            <h2 class="title">Services</h2>
+            <div class="grid cards-3">
+                <article class="card service-card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>Web Design</h3>
+                    <p>Angular, HTML, CSS with responsive and user-focused interfaces.</p>
+                </article>
+                <article class="card service-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Software Development</h3>
+                    <p>C, C++, C#, Python, Java, JavaScript, and TypeScript solutions.</p>
+                </article>
+                <article class="card service-card">
+                    <i class="fa-brands fa-figma"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>Wireframes, polished screens, and product visuals using Figma and Canva.</p>
+                </article>
             </div>
         </div>
     </section>
 
-    <section class="certificates" id="certificates">
-        <div class="max-width">
+    <section class="section" id="skills">
+        <div class="container reveal">
+            <h2 class="title">Skills</h2>
+            <div class="grid cards-3">
+                <article class="card info-card">
+                    <h3>Programming Languages</h3>
+                    <p>C, C++, C#, Java, Python, SQL, HTML5, CSS3, JavaScript</p>
+                </article>
+                <article class="card info-card">
+                    <h3>Frameworks</h3>
+                    <p>.NET Framework, .NET MVC, Angular, Entity Framework, Selenium</p>
+                </article>
+                <article class="card info-card">
+                    <h3>Tools</h3>
+                    <p>Azure DevOps Server, Visual Studio, SQL Server, MySQL, Git, Postman</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-alt" id="certificates">
+        <div class="container reveal">
             <h2 class="title">Certifications</h2>
-            <div class="skills-content">
-                
-                <div class="cer">
-                    <h1>Google</h1>
-                    <p style="background-image: linear-gradient(to right, green, blue, indigo, violet); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Google Certified Professional Data Analyst <a href ="https://www.coursera.org/account/accomplishments/specialization/certificate/42UM2A3NTNEF"><i class="fa-solid fa-link"></i></a></p>
-                    
-                    <h1 id="w">IBM</h1>
-                    <p style="background-image: linear-gradient(to right, green, blue, indigo, violet); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Python for Data Science, AI and Development <a href ="https://www.coursera.org/account/accomplishments/certificate/KF9WUYAQ95V5"><i class="fa-solid fa-link"></i></a></p>
-                </div>
-                
+            <div class="grid cards-2">
+                <article class="card info-card">
+                    <h3>Google</h3>
+                    <p>Google Certified Professional Data Analyst</p>
+                    <a class="inline-link" href="https://www.coursera.org/account/accomplishments/specialization/certificate/42UM2A3NTNEF" target="_blank" rel="noopener noreferrer">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </article>
+                <article class="card info-card">
+                    <h3>IBM</h3>
+                    <p>Python for Data Science, AI and Development</p>
+                    <a class="inline-link" href="https://www.coursera.org/account/accomplishments/certificate/KF9WUYAQ95V5" target="_blank" rel="noopener noreferrer">View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </article>
             </div>
         </div>
     </section>
 
-    <section class="projects" id="projects">
-        <div class="max-width">
+    <section class="section" id="projects">
+        <div class="container reveal">
             <h2 class="title">Projects</h2>
-            <div class="skills-content">
-                
-                <div class="cer">
-                    <h1>Handwritten Prescription Deciphering using CNN and Bi-LSTM </h1>
-                    
-                    <p style="background-image: linear-gradient(to right, blue, indigo, violet); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">• Developed a hybrid deep learning model combining CNN for spatial feature extraction and Bi-LSTM for sequential dependency reduction.<br>
-• Achieved a high recognition accuracy of 98.40% on test data.<br>
-• Implemented an iterative training methodology to prevent overfitting and ensure continuous learning.<br>
-• Contributed to improved patient care and healthcare information management by reducing misinterpretation of handwritten prescriptions.
-
-</p>
-
-
-                    <h1>QuizNotepad</h1>
-                    
-                    <p style="background-image: linear-gradient(to right, blue, indigo, violet); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">• Created an engaging quiz game featuring over 10 coding language puzzles, showcasing interactive and immersive design.<br>
-• Seamlessly integrated the game with a backend system, resulting in a 30% boost in user engagement and interaction.<br>
-• Spearheaded the development of a feature-rich environment, enabling users to create, save, and revisit over 20 personal notes, showcasing innovative and user-centric design.
- </p>
-                    
-                    <h1>Pneumonia Detection using Machine Learning</h1>
-                    
-                    <p style="background-image: linear-gradient(to right, blue, indigo, violet); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">• Developed a high-performance sequential model for Pneumonia detection, achieving an impressive accuracy rate of 94.5%, demonstrating exceptional proficiency in machine learning.<br>
-• The management of a sizable 2 GB dataset showcased adept data handling and analysis skills, contributing to the achievement of a robust 96% confidence level for accurate diagnostics.
- <!--<a href ="https://github.com/hamzaarif12345/Pneumonia_detection"><i class="fa-solid fa-link"></i></a>--></p>
-                    
-                    
-                </div>
-                
+            <div class="stack">
+                <article class="card info-card">
+                    <h3>Handwritten Prescription Deciphering using CNN and Bi-LSTM</h3>
+                    <ul class="clean-list">
+                        <li>Built a hybrid deep learning model with CNN for spatial extraction and Bi-LSTM for sequence understanding.</li>
+                        <li>Achieved 98.40% recognition accuracy on test data.</li>
+                        <li>Used iterative training to reduce overfitting and improve stability.</li>
+                        <li>Improved prescription readability to support better healthcare workflows.</li>
+                    </ul>
+                </article>
+                <article class="card info-card">
+                    <h3>QuizNotepad</h3>
+                    <ul class="clean-list">
+                        <li>Created a quiz game with 10+ coding-language puzzles and interactive UX.</li>
+                        <li>Integrated backend features that increased user engagement by around 30%.</li>
+                        <li>Implemented a notes module for creating, saving, and revisiting 20+ personal notes.</li>
+                    </ul>
+                </article>
+                <article class="card info-card">
+                    <h3>Pneumonia Detection using Machine Learning</h3>
+                    <ul class="clean-list">
+                        <li>Developed a sequential model reaching 94.5% prediction accuracy.</li>
+                        <li>Handled a 2 GB dataset and achieved 96% confidence level for diagnostics.</li>
+                    </ul>
+                </article>
             </div>
         </div>
     </section>
 
-
-    <section class="experience" id="experience">
-        <div class="max-width">
+    <section class="section section-alt" id="experience">
+        <div class="container reveal">
             <h2 class="title">Experience</h2>
-            <div class="skills-content">
-                <div class="cer">
-                    <h1>NCS | Associate Software Engineer</h1>
-                    <p style="background-image: linear-gradient(to right, blue, indigo, violet); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
-                        • <!--<b>Admin Module Development: </b>-->Architected and implemented the admin module following the MVC pattern to enable streamlined 
-                        management of various user roles.<br>
-                        • <!--<b> Entity Framework Integration:</b> -->Integrated Entity Framework to establish a robust connection with SQL Server, ensuring efficient data 
-                        access, storage, and manipulation.<br>
-                        • <!--<b> Back-End Development:</b> -->Engineered secure, optimized, and scalable server-side logic adhering to industry best practices, achieving 
-                        reduction in server response time.<br>
-                        • <!--<b>Front-End Development:</b>--> Designed dynamic, responsive, and user-friendly admin interfaces leveraging enhancing admin task efficiency.<br>
-                        • <!--<b>Repository Architecture Implementation:</b> -->Worked within an N-layer architecture to support system handling over 6 million taxpayers.</p>
-                </div>
-                <div class="cer">
-                    <h1>Buildspace | Developer</h1>
-                    <p style="background-image: linear-gradient(to right, blue, indigo, violet); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
-                        • <!--<b>Frontend Development</b>: -->Developed a web app enabling non-coders to create portfolio websites using English language.  <br>
-                        • <!--<b>Backend Implementation</b>:--> Used HTML5, CSS3, and JavaScript to build a responsive front-end interface.  <br>
-                        • <!--<b>Database Integration</b>:-->Implemented custom functionality to process user inputs and generate customized portfolios.<br>
-                        • <!--<b>Data Management</b>:--> Ensured the app was user-friendly and accessible across devices. </p>
-                  
-                </div>
-                <div class="cer">
-                    <h1>IBM | Application Developer Trainee</h1>
-                    <p style="background-image: linear-gradient(to right, blue, indigo, violet); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
-                        • <!--<b>Frontend Development</b>: -->Worked on Angular for Management system, along with Java 8. <br>
-                        • <!--<b>Backend Implementation</b>:--> Refined code using HTML5, CSS3, and JavaScript of web applications. <br>
-                        • <!--<b>Database Integration</b>:-->Explored Generative AI and Data Science principles, applying them in training scenarios. <br>
-                        • <!--<b>Data Management</b>:--> Utilized Git and GitHub for version control, collaborating on projects.</p>
-                  
-                </div>
-                <div class="cer">
-                    <h1>Tech Mahindra | SDE Intern </h1>
-                    <p style="background-image: linear-gradient(to right, blue, indigo, violet); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
-                        • <!--<b>Frontend Development</b>: -->Designed and implemented a responsive user interface using HTML5, CSS3, and Django, resulting in a
-                        5% reduction in page load time.<br>
-                        • <!--<b>Backend Implementation</b>:--> Developed robust server-side functionality with Django, optimizing performance and security, resulting in
-                        a 10% reduction in response time.<br>
-                        • <!--<b>Database Integration</b>:-->Integrated the application with a MongoDB database, enabling efficient data storage and retrieval; improved
-                        query performance by 10%.<br>
-                        • <!--<b>Data Management</b>:--> Efficiently collected, organized, and maintained data, contributing to seamless application operation and
-                        enhanced user experience.</p>
-                  
-                </div>
-                
+            <div class="stack">
+                <article class="card info-card">
+                    <h3>NCS | Associate Software Engineer</h3>
+                    <ul class="clean-list">
+                        <li>Architected and implemented an MVC-based admin module for streamlined role management.</li>
+                        <li>Integrated Entity Framework with SQL Server for reliable and efficient data operations.</li>
+                        <li>Engineered secure and scalable server-side logic with improved response times.</li>
+                        <li>Worked in N-layer architecture supporting systems handling over 6 million taxpayers.</li>
+                    </ul>
+                </article>
+                <article class="card info-card">
+                    <h3>Buildspace | Developer</h3>
+                    <ul class="clean-list">
+                        <li>Developed a web app that helps non-coders generate portfolio websites using plain English.</li>
+                        <li>Built responsive front-end interfaces with HTML5, CSS3, and JavaScript.</li>
+                        <li>Implemented custom logic to process user input and generate tailored output pages.</li>
+                    </ul>
+                </article>
+                <article class="card info-card">
+                    <h3>IBM | Application Developer Trainee</h3>
+                    <ul class="clean-list">
+                        <li>Worked on Angular-based management systems alongside Java 8 services.</li>
+                        <li>Refined web application code quality with HTML5, CSS3, and JavaScript improvements.</li>
+                        <li>Applied data science and generative AI concepts in training projects.</li>
+                    </ul>
+                </article>
+                <article class="card info-card">
+                    <h3>Tech Mahindra | SDE Intern</h3>
+                    <ul class="clean-list">
+                        <li>Built responsive UI components with HTML5, CSS3, and Django.</li>
+                        <li>Developed backend functionality in Django and optimized response times.</li>
+                        <li>Integrated MongoDB for efficient storage and faster queries.</li>
+                    </ul>
+                </article>
             </div>
         </div>
     </section>
-    <!-- contact section start -->
-    <section class="contact" id="contact">
-        <div class="max-width">
-            <h2 class="title">Contact Details</h2>
-            <div class="contact-content">
-                <div class="column left">
-                    <div class="text">Get in Touch</div>
-                    <p style="background-image: linear-gradient(to right, green,blue, indigo); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">If you want an advice, Contact me</p>
-                    <div class="icons">
-                        <div class="row">
-                            <i class="fas fa-user"></i>
-                            <div class="info">
-                                <div class="head">Name</div>
-                                <div class="sub-title" style="background-image: linear-gradient(to right, green,blue, indigo); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Hamza Arif</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div class="info">
-                                <div class="head">Address</div>
-                                <div class="sub-title" style="background-image: linear-gradient(to right, green,blue, indigo); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">New Delhi, India</div>
-                            </div>
-                        </div>
 
-                        <!-- <div class="row">
-                            <i class="fa-solid fa-phone"></i>
-                            <div class="info">
-                                <div class="head">Phone</div>
-                                <div class="sub-title" style="background-image: linear-gradient(to right, green,blue, indigo); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">8755160374</div>
-                            </div>
-                        </div> -->
-                        <div class="row">
-                            <i class="fas fa-envelope"></i>
-                            <div class="info">
-                                <div class="head">Email</div>
-                                <div class="sub-title" style="background-image: linear-gradient(to right, green,blue, indigo); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">hamza81611@gmail.com</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <i class="fa-brands fa-linkedin"></i>
-                            <div class="info">
-                                <div class="head">Linkedin</div>
-                                <div class="sub-title"><a href ="https://in.linkedin.com/in/hamza-arif-390001222" style="background-image: linear-gradient(to right, green,blue, indigo); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Linkedin/Hamza Arif</a></div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <i class="fa-brands fa-github"></i>
-                            <div class="info">
-                                <div class="head">Github</div>
-                                <div class="sub-title"><a href ="https://github.com/hamzaarif12345" style="background-image: linear-gradient(to right, green,blue, indigo); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Github/hamzaarif12345</a></div>
-                            </div>
-                        </div>
-                        <div class="row1">
-                            <!--<i class="fa-solid fa-file"></i>-->
-                            <div class="info">
-                                <div class="head"></div>
-                                <div class="sub-title"><a href="https://drive.google.com/file/d/1qSCk1KuO-Bgj-OV_g7IzZF1F9XJ0oNOY/view?usp=drivesdk" class="btn">Resume</a></div>
-                            </div>
-                        </div>
-                        
+    <section class="section" id="contact">
+        <div class="container reveal">
+            <h2 class="title">Contact</h2>
+            <div class="grid cards-2">
+                <article class="card contact-card">
+                    <h3>Get in Touch</h3>
+                    <p>If you want to collaborate or discuss opportunities, feel free to connect.</p>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-map-marker-alt"></i> New Delhi, India</li>
+                        <li><i class="fas fa-envelope"></i> hamza81611@gmail.com</li>
+                        <li><i class="fa-brands fa-linkedin"></i> <a class="inline-link" href="https://in.linkedin.com/in/hamza-arif-390001222" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></li>
+                        <li><i class="fa-brands fa-github"></i> <a class="inline-link" href="https://github.com/hamzaarif12345" target="_blank" rel="noopener noreferrer">GitHub Profile</a></li>
+                    </ul>
+                    <a class="btn btn-primary" href="https://drive.google.com/file/d/1qSCk1KuO-Bgj-OV_g7IzZF1F9XJ0oNOY/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">View Resume</a>
+                </article>
+                <article class="card contact-card">
+                    <h3>Current Focus</h3>
+                    <p>Production-grade .NET solutions, Angular interfaces, and practical AI/ML applications.</p>
+                    <div class="tag-wrap">
+                        <span class="tag">.NET</span>
+                        <span class="tag">Angular</span>
+                        <span class="tag">C#</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">AI/ML</span>
+                        <span class="tag">Data</span>
                     </div>
-                </div>
-                <!--<div class="column right">
-                    <div class="text">Message me</div>
-                    <form action="#">
-                        <div class="button-area">
-                            <a href="https://forms.gle/zNAejgHxS5xknCmW8"><button type="button">Contact</button></a>
-                        </div>
-                    </form>
-                </div>
-            </div>-->
+                </article>
+            </div>
         </div>
     </section>
 
-    <!--add for the third commit-->
-    <!-- addd for second commit-->
-        <!--again a commit-->
-    <!-- footer section start -->
     <footer>
-        <span>Created By <a href="#Home">Hamza Arif </a> | <span class="far fa-copyright"></span> All rights reserved.</span>
+        <div class="container">
+            <p>Created by Hamza Arif. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="port_script1.js"></script>
